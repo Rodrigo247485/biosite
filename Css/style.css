@@ -1,0 +1,161 @@
+/*
+    Author: Rodrigo Piccardo
+    Date: 7/6/2025
+    File: Styles.css
+*/
+
+/*Css reset*/
+body, header, nav, main, footer, img, h1, h2, ul{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*Style rules for body and images*/
+body{
+  background-color: #dcd3f7;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+/*Style rules for header area*/
+
+.hero{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.bg-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-image{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 40px;
+}
+
+.profile-img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.profile-image h1{
+  font-family: georgia, serif;
+  color: #f8f8ff;
+  font-size: 2rem;
+}
+
+/*style rules for navagation area*/
+nav{
+  background-color: #a391c6;
+}
+
+nav ul{
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+  gap: 2em;
+}
+
+nav li{
+  border-top: 1px solid #c4b5e1;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav li a{
+  display: block;
+  color: #f8f8ff;
+  text-decoration: none;
+  padding: 0.5em 0.5em;
+}
+
+/*style rules for main content*/
+main{
+  padding: 1.5%;
+  font-family: georgia, serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+main p{
+  font-size: 1.25em;
+}
+
+main h2{
+  padding: 1%;
+}
+
+.relax{
+  width: 150px;
+}
+
+/* Layout for rows and columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-bottom: 2em;
+}
+
+.column {
+  flex: 1 1 45%;
+  min-width: 280px;
+  height: 300px;
+}
+
+/* Alternate background colors for each row */
+.row:nth-child(odd) {
+  background-color: #e4dbf8;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.row:nth-child(even) {
+  background-color: #cfc4f0;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+/* Image styling inside columns */
+.image-row {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.side.image, .relax {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Responsive for mobile: one column per row */
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
