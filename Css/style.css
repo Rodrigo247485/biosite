@@ -106,6 +106,16 @@ main h2{
   width: 150px;
 }
 
+.grid{
+  grid-template-columns: 1fr 1fr;
+  gap: 15em;
+}
+
+.ball-pit{
+  display: block;
+
+}
+
 /* Layout for rows and columns */
 .row {
   display: flex;
@@ -120,6 +130,13 @@ main h2{
   height: 300px;
 }
 
+.row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
 /* Alternate background colors for each row */
 .row:nth-child(odd) {
   background-color: #e4dbf8;
@@ -128,6 +145,17 @@ main h2{
 }
 
 .row:nth-child(even) {
+  background-color: #cfc4f0;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.row-2:nth-child(odd) {
+  background-color: #e4dbf8;
+  padding: 1em;
+  border-radius: 10px;
+}
+.row-2:nth-child(even) {
   background-color: #cfc4f0;
   padding: 1em;
   border-radius: 10px;
