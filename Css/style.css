@@ -135,7 +135,7 @@ main h2{
 
 .hobby-images {
   height: 350px;
-  width: 250;
+  width: 250px;
   background: linear-gradient(to bottom, #c7b8ea, #f8f4fc);
   border: 1px solid #ccc;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
